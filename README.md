@@ -1,3 +1,5 @@
 # realfreenow
 
-This is my personal project. I create this landing page.
+This is my First Git Repo. I create this landing page.
+<br>
+Author - Md. Mahfujur Rahman
