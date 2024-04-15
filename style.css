@@ -7,44 +7,10 @@ html,body{
     width: 100%;
     height: 100%;
 }
-/* Import font (recoleta) */
-@import url('https://fonts.cdnfonts.com/css/recoleta');
-/* Boilerplate END */
-/* header CSS */
-.logo{
-    padding: 1vw 1vw;
-    font-size: 3vw;
-    font-weight: 600;
-    font-family: 'recoleta', sans-serif;
+
+/* Logo resizeing */
+header img {
+    width: 30rem;
     display: flex;
     justify-content: center;
-    background-color: #192655;
-    color: #E1AA74; 
-}
-/* Main CSS Start with {section} Class */
-
-/* [section] is parent of (sectiontext) and (sectionImg)*/
-
-.section{
-    height: calc(100% - 100px);
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-}
-.sectiontext{
-    height: 600px;
-    width: 50%;
-    background-color: lightcoral ;   
-}
-.sectionimg{
-    width: 50%;
-    background-color: blueviolet;
-}
-.sectiontext h1{
-    font-size: 5rem;
-    padding: 3rem;
-}
-.sectiontext p{
-    font-size: 3rem;
-    padding: 3rem;
 }
