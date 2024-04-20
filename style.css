@@ -7,16 +7,13 @@
     --font-Heading:"Barlow Condensed";
     --font-body: "Montserrat";
 
-    --broder-radius:1.2rem;
-    --border-radius-lg:2.4rem;
+/* todo Color variables continious texting */
 
-    --color-bg : hsl(0, 0%, 0%);
-    --color-bg2: hsl(0, 0%, 30%);
-    --color-brand:;
-    --color-brand2: ;
-    --color-body:;
-    --color-heading:;
-    --sidebar-hsl:;
+    --color-bg:hsl(175, 58%, 93%);
+    --color-container:hsl(186, 34%, 60%);
+    --color-head: hsl(217, 84%, 60%); 
+    --color-btn:hsl(20, 99%, 60%);
+    --color-text:hsl(266, 91%, 14%);
 }
 *,*::after,*::before{
     margin: 0;
@@ -29,7 +26,7 @@ html{
 }
 body{
     font-size: 4rem;
-    background-color: var(--color-bg2);
+    background-color:var(--color-bg);
     line-height: 1.5rem;
     font-family: var(--font-body), sans-serif;
 }
@@ -39,10 +36,8 @@ h1,h2,h3,h4,h5{
     line-height: 1.2rem;
     font-family: var(--font-Heading);
     font-size: 3rem;
-    /* todo h <tag> colors */
-    
+    color: var(--color-text);
 }
-
 a{
     text-decoration: none;
     color: var();
@@ -52,43 +47,65 @@ a{
 a:hover{
     color: var();
 }
-
 img{
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    display: inline-block;
+    display: block;
+    border: 1px solid var(--color-text);
+    box-shadow: #ffff;
     border-radius: 1.5rem;
-    /* todo customize image size and check after again */
-}
-/* ! CSS Global style END here */
+} /* ! CSS Global style END here */
 
 
 /* * START Design logo */
+/* ? Logo is also my header. I use logo for my [headder] class. */
 .logo{
-    font-family: var(--font-logo);
-    font-size: 4rem;
+  
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    color: #ffde59;
     max-width: 100%;
-    background-color: black;
-    padding: 1.5rem;
+    background-color:var(--color-head);
+    align-items: baseline;
+    padding: 1rem;
     /* todo [Fonts are broken on small screen size] */
     /* ? Maybe need to use [media query] */
+}
+.logo-text{
+    font-family: var(--font-logo);
+    font-size: 4rem;
+    color: var(--color-text);
+
 }
 .fa-gift{
     padding: 1rem;
     font-size: 4rem;
-}
-/* ! Logo Design END */
+} /* ! Logo Design END */
 
 /* ? Button Design START */
 .btn-size{
-    padding:1rem 2rem;
+    padding:0.5rem 3rem;
     margin: 1rem 2rem;
     font-size: 2rem;
     font-weight: 600;
-    border-radius: 1.3rem;
+    border-radius: 1rem;
+    background-color: var(--color-btn);
+    border: none;
+    text-align: center;
+    color: var(--color-text);
+} /* !Button Design END */
 
+/* ? Container & Body Design START */
+
+.container{
+    text-align: center;
+    justify-content: space-around;
 }
+.my-col-box{
+    background-color: var(--color-container);
+    border-radius: 0.5rem;
+    margin: 2rem 2rem;
+    padding: 2rem;
+}
+/* ! Container & Body Design END */
