@@ -1,9 +1,8 @@
-/* *import google font */
+/* *import google font [Orbitron],[Barlow Condensed], [Montserrat] */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
-/* * CSS Global Style Start here */
+/* * CSS Global Style START here */
 :root{
-
     --font-logo:"Orbitron";
     --font-Heading:"Barlow Condensed";
     --font-body: "Montserrat";
@@ -59,10 +58,12 @@ img{
     width: 100%;
     display: inline-block;
     border-radius: 1.5rem;
+    /* todo customize image size and check after again */
 }
 /* ! CSS Global style END here */
 
-/* ? Start Design logo */
+
+/* * START Design logo */
 .logo{
     font-family: var(--font-logo);
     font-size: 4rem;
@@ -73,6 +74,8 @@ img{
     max-width: 100%;
     background-color: black;
     padding: 1.5rem;
+    /* todo [Fonts are broken on small screen size] */
+    /* ? Maybe need to use [media query] */
 }
 .fa-gift{
     padding: 1rem;
@@ -80,10 +83,12 @@ img{
 }
 /* ! Logo Design END */
 
+/* ? Button Design START */
 .btn-size{
     padding:1rem 2rem;
     margin: 1rem 2rem;
     font-size: 2rem;
+    font-weight: 600;
     border-radius: 1.3rem;
 
 }
