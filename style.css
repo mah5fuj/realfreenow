@@ -9,9 +9,9 @@
 
 /* todo Color variables continious texting */
 
-    --color-bg:hsl(175, 58%, 93%);
+    --color-bg:hsl(217, 66%, 64%);
     --color-container:hsl(186, 34%, 60%);
-    --color-head: hsl(217, 84%, 60%); 
+    --color-head: hsl(217, 66%, 64%); 
     --color-btn:hsl(20, 99%, 60%);
     --color-text:hsl(266, 91%, 14%);
 }
@@ -66,7 +66,6 @@ img{
     display: flex;
     justify-content: center;
     max-width: 100%;
-    background-color:var(--color-head);
     align-items: baseline;
     padding: 1rem;
     /* todo [Fonts are broken on small screen size] */
@@ -109,3 +108,11 @@ img{
     padding: 2rem;
 }
 /* ! Container & Body Design END */
+
+/* * For Mobile size */
+
+@media only screen and (max-width:600px) {
+
+    .logo-text{
+        font-size: 3rem;
+}
